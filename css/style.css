@@ -1,41 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@700&family=Oxygen&family=Roboto&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-h1, h2, .container-constructing{
+body{
+    background-color: #267EA3;
+    color: #FFDE21;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+
+}
+
+.start{
+    background-image: url(../images/background.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 5vh;
+}
+
+.within{
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 3% 0%;
 }
 
-.container-done{
+h1 {
+    text-decoration: underline;
+}
+
+/* .container-done{
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-evenly;   
+} */
+
+hr {
+    border-top: 8px solid #FFDE21;
+    border-radius: 5px;
 }
 
 #lucky{
-    height: 10vh;
-    width: 5vh;
+    height: 20vh;
+    width: 10vh;
+    border: solid 2px #fff;
+    border-radius: 20px;
+    padding: 1vh;
 }
 #hair{
-    height: 10vh;
-    width: 15vh;
+    height: 15vh;
+    width: 25vh;
 }
 #lemon{
-    height: 10vh;
-    width: 7.5vh;
+    height: 20vh;
+    width: 15vh;
 }
 #mangata{
-    height: 10vh;
-    width: 20vh;
+    height: 15vh;
+    width: 30vh;
 }
 
 
 
-.container-done img:hover{
+.within img a:hover{
     transform: scale(1.2,1.2);
 }
 
@@ -62,4 +96,17 @@ h1, h2, .container-constructing{
 
 a, a:visited{
     color: orange;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container-constructing{
+        flex-direction: column;
+        padding: 10vh 0;
+    }
+
+    .nav-link{
+        margin: 2vh 0;
+    }
+
 }
