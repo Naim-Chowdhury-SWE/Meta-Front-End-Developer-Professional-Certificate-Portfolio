@@ -112,8 +112,22 @@ nav, li {
 } 
 
 a, a:visited{
-    color: orange;
+    color: rgb(255, 255, 255);
 }
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 99%;
+    margin-top: 2%;
+
+}
+
+/* .landing-picture {
+    object-fit:contain;
+} */
+
+
 
 .container-products{
     display: flex;
@@ -131,7 +145,7 @@ figure {
     margin: 2% 0%;
   }
 
-  figure > p{
+figure > p{
     margin: 0;
     text-align: center;
     background-color: rgb(58, 129, 122);
@@ -144,13 +158,19 @@ figcaption{
     justify-content: center;
     margin: 0;
     padding: 0;
-}
+} 
+
 
 footer {
-    text-align: center;
     margin-top: 20vh;
-    /* position: fixed;
+    /*text-align: center;
+     position: fixed;
     bottom: 0; */
+}
+
+footer .navbar {
+    justify-content: space-evenly;
+    font-size: larger;
 }
 
 
